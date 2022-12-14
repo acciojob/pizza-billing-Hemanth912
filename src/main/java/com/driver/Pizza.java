@@ -70,10 +70,10 @@ public class Pizza {
             if(ischeeseAdded==true) {
                 this.bill = this.bill + "Extra Cheese Added: " + this.cheesePrice + "\n";
             }
-            if(istoppingsAdded==false) {
+            if(istoppingsAdded==true) {
                 this.bill = this.bill + "Extra Toppings  Added: " + this.toppingsPrice + "\n";
             }
-            if(istakeawayAdded==false) {
+            if(istakeawayAdded==true) {
                 this.bill = this.bill + "Paperbag Added: " + this.takeawayPrice + "\n";
             }
             this.bill=this.bill+ "Total Price: "+this.price+"\n";
