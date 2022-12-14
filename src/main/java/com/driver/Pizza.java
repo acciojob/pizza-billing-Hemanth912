@@ -42,7 +42,7 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
         if(ischeeseAdded==false){
-            this.price+=cheesePrice;
+            this.price=this.price+cheesePrice;
             ischeeseAdded=true;
         }
     }
@@ -50,7 +50,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
         if(istoppingsAdded==false){
-            this.price+=toppingsPrice;
+            this.price=this.price+toppingsPrice;
             istoppingsAdded=true;
         }
 
@@ -59,7 +59,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(istakeawayAdded==false){
-            this.price+=takeawayPrice;
+            this.price=this.price+takeawayPrice;
             istakeawayAdded=true;
         }
     }
@@ -68,15 +68,15 @@ public class Pizza {
         // your code goes here
         if(isbillgenerated == false){
             if(ischeeseAdded==true)
-                this.bill += "Extra Cheese Added: "+this.cheesePrice+"\n";
+                this.bill = this.bill+"Extra Cheese Added: "+this.cheesePrice+"\n";
 
             if(istoppingsAdded==false)
-                this.bill+= "Extra Toppings  Added: "+this.toppingsPrice+"\n";
+                this.bill= this.bill+"Extra Toppings  Added: "+this.toppingsPrice+"\n";
 
             if(istakeawayAdded==false)
-                this.bill+= "Paperbag Added: "+this.takeawayPrice+"\n";
+                this.bill=this.bill+"Paperbag Added: "+this.takeawayPrice+"\n";
 
-            this.bill+= "Total Price: "+this.price+"\n";
+            this.bill=this.bill+ "Total Price: "+this.price+"\n";
 
             isbillgenerated = true;
         }
